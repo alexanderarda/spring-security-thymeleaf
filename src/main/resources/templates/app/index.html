@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
-    <title>Spring with Spring Boot, Spring MVC, and Kotlin</title>
+    <title>Dashboard Page</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 </head>
 <body>
-<h1>Welcome to Smart Colony</h1>
-<h2>This is my index page</h2>
+<h1>Welcome! </h1>
+
+Logged user: <span sec:authentication="name">Default Name - will be replaced</span> <br/>
+Roles: <span sec:authentication="principal.authorities">Default Role - will be replaced</span>
+
+<br/>
+
+<a th:href="@{/admin/index}">Go To Admin Page</a>
+
 </body>
 </html>

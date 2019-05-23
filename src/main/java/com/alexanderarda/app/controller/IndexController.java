@@ -8,8 +8,17 @@ public class IndexController {
 
     @GetMapping("/")
     public String showHome(){
-
         return "app/index";
+    }
+
+    @GetMapping("/dashboard")
+    public String showDashboard(){
+        return "app/index";
+    }
+
+    @GetMapping("/access-denied")
+    public String accessDenied(){
+        return "/error/access-denied";
     }
 
 }
