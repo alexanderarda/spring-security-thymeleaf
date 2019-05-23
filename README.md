@@ -12,9 +12,7 @@ Apache Maven
 
 ## :rocket: In Memory Authentication
 
-We will create @Configuration class WebSecurityConfig and extend from WebSecurityConfigurerAdapter from Spring security and
-
-This configuration consist from two functions :
+We will create `@Configuration` class, `WebSecurityConfig` and extend from `WebSecurityConfigurerAdapter` from Spring security and this configuration consist from two functions :
 
 ### AuthenticationManagerBuilder
 For adding user & role configuration
