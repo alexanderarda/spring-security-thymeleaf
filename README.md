@@ -2,7 +2,7 @@
 
 Configure Spring Security to use In Memory Authentication. This is basic example for entering Spring Security and Thymeleaf. In memory means no database required for store users data.
 
-#### This example contains :
+#### :rocket: This example contains :
 
 1. In memory configuration
 2. Built-in Login page from Spring Security
