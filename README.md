@@ -2,7 +2,17 @@
 
 Configure Spring Security to use In Memory Authentication. This is basic example for entering Spring Security and Thymeleaf. In memory means no database required for store users data.
 
-## :rocket: Frameworks & Libs
+#### This example contains :
+
+1. In memory configuration
+2. Built-in Login page from Spring Security
+3. Logout function
+4. Thymeleaf integration with spring security
+5. Add user using two different roles (Employee & Admin)
+6. Restrict page based on role
+ 
+
+## Frameworks & Libs
 
 
 ```bash
@@ -10,11 +20,11 @@ Spring Boot 2.1.5
 Apache Maven
 ```
 
-## :rocket: In Memory Authentication
+## In Memory Authentication
 
 We will create `@Configuration` class, `WebSecurityConfig` and extend from `WebSecurityConfigurerAdapter` from Spring security and this configuration consist from two functions :
 
-### AuthenticationManagerBuilder
+### :rocket: AuthenticationManagerBuilder
 For adding user & role configuration
 
 ```java
@@ -31,7 +41,7 @@ protected void configure(AuthenticationManagerBuilder auth) throws Exception{
 
 ```
 
-### HttpSecurity
+### :rocket: HttpSecurity
 For URL & redirect configuration
 
 ```java
@@ -64,6 +74,3 @@ For URL & redirect configuration
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
