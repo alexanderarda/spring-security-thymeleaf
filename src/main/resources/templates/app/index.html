@@ -17,5 +17,12 @@ Roles: <span sec:authentication="principal.authorities">Default Role - will be r
 
 <a th:href="@{/admin/index}">Go To Admin Page</a>
 
+<br/><br/>
+
+<form th:action="@{/logout}" method="post">
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+    <button type="submit">Logout</button>
+</form>
+
 </body>
 </html>
